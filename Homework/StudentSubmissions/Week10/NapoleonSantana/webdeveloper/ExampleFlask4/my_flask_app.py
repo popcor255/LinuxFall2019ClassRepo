@@ -4,7 +4,7 @@ import os
 
 project_root = os.path.dirname(__file__)
 template_path = os.path.join(project_root, '/home/webdeveloper/sites/SedJedi/4/build/')
-app = Flask(__name__, template_folder=template_path)
+app = Flask(__name__, template_folder=template_path, app = Flask(__name__, template_folder=template_path, static_folder=template_path)
 
 # a route where we will display a welcome message via an HTML template
 @app.route("/")
